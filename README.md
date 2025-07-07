@@ -26,20 +26,11 @@ This HTML application provides a complete pizza ordering interface where custome
 
 **Crust types**:
 
-- Classic White.
-- Multigrain.
-- Stuffed Crust.
-- Gluten-free.
+- Classic White , Multigrain , Stuffed Crust , Gluten-free.
 
 **Toppings**:
 
-- Red Sauce.
-- White Sauce.
-- Mozzarella.
-- Pepperoni.
-- Mushrooms.
-- Peppers.
-- Anchovies.
+- Red Sauce , White Sauce , Mozzarella , Pepperoni , Mushrooms , Peppers , Anchovies
 
 **Quantity**:
 
