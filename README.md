@@ -99,13 +99,9 @@ This HTML application provides a complete pizza ordering interface where custome
 
 ---
 
-## 🔧 File Structure
+## 🔧 Project Structure
 
-├── Task 2/
-└── src/  
- │ └── index.html  
- │
-└── README.md
+<pre> \``` index.html ├── &lt;head&gt; # Document metadata (title, meta tags) ├── &lt;body&gt; │ ├── &lt;header&gt; # Page header with navigation │ ├── &lt;main&gt; │ │ └── &lt;form&gt; # Pizza order form │ │ ├── Customer info section │ │ └── Pizza customization section \``` </pre>
 
 ---
 
