@@ -1,51 +1,63 @@
-# 🍕 Black Goose Bistro | Pizza Ordering Form
+# 🍕 PizzaMania | Multi-Page Pizza Ordering Website
 
-A pure HTML pizza ordering form for Black Goose Bistro that allows customers to customize and order pizzas online.
+**PizzaMania** is a deliciously designed, multi-page pizza ordering website created as part of a frontend development project. It enables users to explore our chefs, view a gallery, place custom pizza orders, and contact us — all through a clean and user-friendly interface.
 
 ---
 
-## 🍕 Project Overview
+## 🌐 Project Overview
 
-This HTML application provides a complete pizza ordering interface where customers can:
+This project includes multiple HTML pages styled with custom CSS and enhanced with JavaScript. It focuses on:
 
-- Submit their personal and delivery information.
-- Customize pizza with various crust and topping options.
-- Specify the quantity of pizzas needed.
-- Submit or reset their order.
+- Clean layout
+- Modern responsive design
+- Semantic HTML5 structure
+- Accessibility best practices
 
 ---
 
 ## ✨ Features
 
-### 🧾 Customer Information
+### 🧭 Navigation Bar
 
-- Name, address, phone, and email fields.
-- Delivery instructions (optional, up to 400 characters).
+- Logo and site title
+- Links to: Home, Order, Contact
+- Social media icons
 
-### 🍕 Pizza Customization
+### 🏠 Homepage (`index.html`)
 
-**Crust types**:
+- Hero section with title, description, and CTA buttons
+- Featured chefs with image cards and social links
+- Responsive gallery of pizza images
 
-- Classic White , Multigrain , Stuffed Crust , Gluten-free.
+### 🛒 Order Page (`order.html`)
 
-**Toppings**:
+- Customer information form (name, phone, email, etc.)
+- Fully customizable pizza builder:
+  - Crust selection (radio buttons)
+  - Topping choices (checkboxes)
+  - Quantity field
+  - Delivery instructions
+- Submit & Reset buttons
 
-- Red Sauce , White Sauce , Mozzarella , Pepperoni , Mushrooms , Peppers , Anchovies
+### 📍 Contact Page (`contact.html`)
 
-**Quantity**:
-
-- Input field with numeric validation.
+- Contact form (name, email, message)
+- Embedded Google Map showing shop location
 
 ---
 
-## 🛠️ Technology Used
+## 🛠️ Technologies Used
 
-- Pure **HTML5**.
-- Semantic HTML elements.
+| Technology       | Purpose                  |
+| ---------------- | ------------------------ | --- |
+| **HTML5**        | Page structure           |
+| **CSS3**         | Custom styles and layout |     |
+| **Font Awesome** | Social media icons       |
+| **Google Maps**  | Embedding shop location  |
 
 ---
 
-## 💡 Meta Tags Used
+## 🧾 Meta Tags Used
 
 ```html
 <meta charset="UTF-8" />
@@ -53,79 +65,24 @@ This HTML application provides a complete pizza ordering interface where custome
 <meta name="author" content="Maha Ebrahim" />
 <meta
   name="description"
-  content="Order your custom pizza from Black Goose Bistro. Choose crust and toppings with your own delivery instructions."
+  content="PizzaMania is a multi-page pizza ordering website with chef highlights, gallery, and custom order form."
 />
 <meta
   name="keywords"
-  content="pizza, crust, order form, restaurant, custom pizza, Black Goose Bistro"
+  content="pizza, order pizza, pizza website, custom pizza, online food"
 />
+
+## 🗂️ Project Structure ├── README.md └── src/ ├── index.html # Homepage ├──
+order.html # Pizza order form ├── contact.html # Contact & map ├── css/ │ └──
+style.css # Custom styles ├── js/ │ └── index.js # Optional JavaScript └──
+images/ # All site images ## 🚀 Future Enhancements - 🔗 **Backend Integration**
+Connect the order form to a real backend service (Node.js, Firebase, etc.) for
+actual order processing. - 💾 **Persistent Orders** Use `localStorage` or
+`sessionStorage` to save user preferences and past orders for a better UX. - 🎞️
+**Gallery & Testimonials Animation** Add smooth transitions and animations to
+the pizza gallery or client testimonials using CSS or JavaScript libraries. - 🌐
+**Live Deployment** Host the website using platforms like: -
+[Vercel](https://vercel.com/) --- ## 📞 Contact Have suggestions, feedback, or
+want to collaborate? I'd love to connect! **👩‍💻 Maha Ebrahim** *Frontend
+Developer* - 📧 **Email:** mahaebrahiim4@gmail.com
 ```
-
-## 🚀 Getting Started
-
-### ✅ Requirements
-
-- Any modern browser (Chrome, Firefox, Edge, Safari).
-- A text editor like **VS Code** (if you want to edit the file).
-
----
-
-### ▶️ How to Run
-
-- Save the HTML file as `index.html`.
-- Double-click the file to open it in your browser.
-
----
-
-## 📋 Usage Guide
-
-### 📝 Placing an Order
-
-- Enter your information in the "Your Information" section.
-- Customize your pizza:
-  - Select one crust type.
-  - Choose as many toppings as desired.
-  - Specify the quantity.
-- Submit your order using the **"Bring me a pizza!"** button.
-- Use the **"Reset"** button to clear all selections.
-
----
-
-### ✅ Validation
-
-- Email must follow a valid format.
-- Quantity must be numeric (validated using `inputmode="numeric"` and `pattern`).
-- Delivery instructions can contain up to 400 characters.
-
----
-
-## 🔧 Project Structure
-
-```
-index.html
-├── <head>     # Document metadata (title, meta tags)
-├── <body>
-│   ├── <header>   # Page header with navigation
-│   ├── <main>
-│   │   └── <form> # Pizza order form
-│   │       ├── Customer info section
-│   │       └── Pizza customization section
-```
-
----
-
-## 🤝 How to Extend
-
-To make this project production-ready, you could:
-
-- Add CSS for styling and responsiveness.
-- Add JavaScript for dynamic validation or interactivity.
-- Add a backend to store order data.
-- Set a `form` action to send data to a server.
-
----
-
-## 📞 Contact
-
-For questions about this HTML implementation, please contact:  
-**Maha Ebrahim** (meta author).

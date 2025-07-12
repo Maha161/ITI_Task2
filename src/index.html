@@ -1,142 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Maha Ebrahim">
-  <meta name="keywords" content="pizza, order pizza, online restaurant, food delivery, custom pizza, online ordering, menu, delicious food">
-  <meta name="description" content="Order your favorite pizza from Black Goose Bistro online. Customize your pizza and get it delivered within an hour">
-  <title>Black Goose Bistro</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Maha Ebrahim" />
+  <meta name="keywords" content="pizza, order pizza, online restaurant, food delivery, custom pizza, online ordering, menu, delicious food" />
+  <meta name="description" content="Order your favorite pizza from PizzaMania online. Customize your pizza and get it delivered within an hour" />
+  <link rel="icon" href="./images/pizza.ico" type="image/x-icon" />
+  <title>PizzaMania</title>
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <link href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" rel="stylesheet" />
 </head>
 <body>
+
   <header>
-    <nav>
-      <ul>
-        <li><a href="#">Main</a></li>
-        <li><a href="#">Make an Order</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </nav>
-
-    <div class="header-content">
-      <h1>Black Goose Bistro | Pizza-on-Demand</h1>
-      <p>Our 12<sup>''</sup> wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
-    </div>
-  </header>
-  <main>
-    <form>
-      <section>
-        <div class="contact-info-section">
-          <fieldset>
-            <legend>Your Information</legend><br>
-            <table>
-              <tr>
-                <td><label for="name">Name:</label></td>
-                <td><input type="text" id="name" name="name" required></td>
-              </tr>
-              <tr>
-                <td><label for="address">Address:</label></td>
-                <td><input type="text" id="address" name="address" required></td>
-              </tr>
-              <tr>
-                <td><label for="phone">Telephone Number:</label></td>
-                <td><input type="tel" id="phone" name="phone" required></td>
-              </tr>
-              <tr>
-                <td><label for="email">Email:</label></td>
-                <td><input type="email" id="email" name="email" required></td>
-              </tr>
-              <tr>
-                <td colspan="2"><label for="instruction">Delivery Instructions:</label></td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <textarea id="instruction" name="instruction" rows="4" cols="40" maxlength="400">No more than 400 characters long</textarea>
-                </td>
-              </tr>
-            </table> <br>
-          </fieldset>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./images/pizza.ico" alt="PizzaMania Logo" />
+          <h1>PizzaMania</h1>
         </div>
-      </section>
 
-      <section>
-        <div class="pizza-selection-section">
-          <h1>Design Your Dream Pizza:</h1>
-          <fieldset>
-            <legend>Pizza Specs</legend>
+        <ul class="nav-links">
+          <li><a href="./index.html">Main</a></li>
+          <li><a href="./order.html">Make an Order</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
 
-            <fieldset>
-              <legend>Crust (Choose one):</legend><br>
-              <div class="crust-options"> 
-                <div class="crust-option">
-                  <input type="radio" name="crust" id="classic" value="Classic White">
-                  <label for="classic">Classic White</label>    
-                </div>
-                <div class="crust-option">
-                  <input type="radio" name="crust" id="multigrain" value="Multigrain">
-                  <label for="multigrain">Multigrain</label>
-                </div>
-                <div class="crust-option">
-                  <input type="radio" name="crust" id="stuffed" value="Stuffed Crust">
-                  <label for="stuffed">Stuffed Crust</label>
-                </div>
-                <div class="crust-option">
-                  <input type="radio" name="crust" id="gluten" value="Gluten-free">
-                  <label for="gluten">Gluten-free</label>
-                </div>
-              </div><br>
-            </fieldset>
-
-            <fieldset>
-              <legend>Toppings (Choose as many as you want):</legend><br>
-              <div class="topping-options">
-                <div class="topping-option">
-                  <input type="checkbox" name="toppings" id="red-sauce" value="Red Sauce">
-                  <label for="red-sauce">Red Sauce</label>
-                </div>
-                <div class="topping-option">
-                  <input type="checkbox" name="toppings" id="white-sauce" value="White Sauce">
-                  <label for="white-sauce">White Sauce</label>
-                </div>
-                <div class="topping-option">
-                  <input type="checkbox" name="toppings" id="mozzarella" value="Mozzarella Cheese">
-                  <label for="mozzarella">Mozzarella Cheese</label>
-                </div>
-                <div class="topping-option">
-                  <input type="checkbox" name="toppings" id="pepperoni" value="Pepperoni">
-                  <label for="pepperoni">Pepperoni</label>
-                </div>
-                <div class="topping-option">
-                  <input type="checkbox" name="toppings" id="mushrooms" value="Mushrooms">
-                  <label for="mushrooms">Mushrooms</label>
-                </div>
-                <div class="topping-option">
-                  <input type="checkbox" name="toppings" id="peppers" value="Peppers">
-                  <label for="peppers">Peppers</label>
-                </div>
-                <div class="topping-option">
-                  <input type="checkbox" name="toppings" id="anchovies" value="Anchovies">
-                  <label for="anchovies">Anchovies</label>
-                </div>
-              </div><br>
-            </fieldset>
-
-            <fieldset>
-              <legend>Number</legend><br>
-              <div class="number-of-pizzas">
-                <label for="quantity">How many pizzas:</label>
-                <input type="text" id="quantity" name="quantity" inputmode="numeric" pattern="[0-9]*" size="2">
-              </div> <br>
-            </fieldset>
-          </fieldset><br>
-
-          <div class="buttons">
-            <input type="submit" value="Bring me a pizza!">
-            <input type="reset" value="Reset">
+        <div class="right-nav">
+          <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="auth-links">
+            <a href="#">Login</a>
+            <span>/</span>
+            <a href="#">Register</a>
           </div>
         </div>
-      </section>
-    </form>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="header">
+      <div class="container">
+        <div class="header-content">
+      <h1>Fresh, Hot Pizza Delivered Fast</h1>
+      <p>Craving something delicious? Build your own pizza or choose from our mouthwatering menu. Fired in a wood oven and delivered to your door in under an hour!</p>
+
+      <div class="header-buttons">
+        <a class="book-button" href="./order.html">Order Now</a>
+        <a class="video-button" href="https://www.youtube.com/" target="_blank">
+          <div class="youtube-icon">
+            <i class="fa-solid fa-play fa-sm"></i>
+          </div>
+          Watch How We Make It
+        </a>
+      </div>
+        </div>
+        <div class="header-image">
+      <img src="./images/pizza1.jpg" alt="Delicious hot pizza on a black dish" />
+        </div>
+      </div>
+    </section>
+    <section class="chefs">
+      <div id="chefs" class="team-section section">
+  <div class="container">
+    <div class="title">
+      <h2>Chefs</h2>
+      <p>Our <span>Professional</span> Chefs</p>
+    </div>
+
+    <div class="team-all-cards">
+      <!-- Chef Card 1 -->
+      <div class="team-card">
+        <img src="./images/chef2.jpg" alt="Walter White - Master Chef" class="chef-image" />
+        <div class="team-card-content">
+          <h3>Walter White</h3>
+          <span>Master Chef</span>
+          <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut.</p>
+          <div class="chef-socials">
+            <a href="https://x.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chef Card 2 -->
+      <div class="team-card">
+        <img src="./images/chef1 (1).jpg" alt="Sarah Jhonson - Patissier" class="chef-image" />
+        <div class="team-card-content">
+          <h3>Sarah Jhonson</h3>
+          <span>Patissier</span>
+          <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit minima suscipit.</p>
+          <div class="chef-socials">
+            <a href="https://x.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chef Card 3 -->
+      <div class="team-card">
+        <img src="./images/chef3.jpg" alt="William Anderson - Cook" class="chef-image" />
+        <div class="team-card-content">
+          <h3>William Anderson</h3>
+          <span>Cook</span>
+          <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit minima suscipit.</p>
+          <div class="chef-socials">
+            <a href="https://x.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </section>
+    <section class="gallery-section">
+  <div class="container">
+    <h2 class="gallery-title">Gallery</h2>
+    <p class="gallery-subtitle">SOME OF OUR <span>DELISIOUS</span> CREATIONS</p>
+
+    <div class="gallery-grid">
+      <img src="./images/pizza-gallary1.jpg" alt="Pizza with Basil" />
+      <img src="./images/pizza-gallary2.jpg" alt="Pepperoni Pizza" />
+      <img src="./images/pizza-gallary3.jpg" alt="Cheesy Pizza Slice" />
+      <img src="./images/pizza-gallary4.jpg" alt="Pizza in Oven" />
+      <img src="./images/pizza-gllary5.jpg" alt="Pizza on Wooden Plate" />
+      <img src="./images/pizza-gallary-6.jpg" alt="Fresh Veggie Pizza" />
+      <img src="./images/pizza-gallary-7 (1).jpg" alt="Fresh Veggie Pizza" />
+      <img src="./images/pizza-gallary-9.jpg" alt="Fresh Veggie Pizza" />
+    </div>
+  </div>
+</section>
+
+
   </main>
+
+  <footer>
+    <div class="footer">
+      <div class="upper-footer">
+        <div class="container">
+          <div class="about-us-colum colum">
+            <h4>About PizzaMania</h4>
+            <p>At PizzaMania, we craft delicious wood-fired pizzas using fresh, local ingredients. Whether you're customizing your own or picking from our classic menu, every bite is a slice of heaven.</p>
+            <p>Fast delivery, quality ingredients, and a passion for pizza — that's our recipe for satisfaction.</p>
+          </div>
+
+          <div class="we-are-special-coulm colum">
+            <h4>Why Choose Us?</h4>
+            <ul>
+              <li><i class="fas fa-chevron-right"></i> <span>Fresh, local ingredients.</span></li>
+              <li><i class="fas fa-chevron-right"></i> <span>Customize your own pizza.</span></li>
+              <li><i class="fas fa-chevron-right"></i> <span>Wood-fired oven magic.</span></li>
+              <li><i class="fas fa-chevron-right"></i> <span>Fast delivery within 1 hour.</span></li>
+              <li><i class="fas fa-chevron-right"></i> <span>Rated 5 stars by happy customers.</span></li>
+            </ul>
+          </div>
+
+          <div class="opening-hours-colum colum">
+            <h4>Opening Hours</h4>
+            <ul>
+              <li><i class="fas fa-clock"></i> <span>Monday - Friday: 11AM - 10PM</span></li>
+              <li><i class="fas fa-clock"></i> <span>Saturday: 12PM - 11PM</span></li>
+              <li><i class="fas fa-clock"></i> <span>Sunday: 12PM - 9PM</span></li>
+            </ul>
+          </div>
+
+          <div class="contact-details-colum colum">
+            <h4>Contact Us</h4>
+            <ul>
+              <li><i class="fas fa-map-marker-alt"></i> <span>123 Pizza Street, Pizzaville 4567</span></li>
+              <li><i class="fas fa-phone-alt"></i> <a href="tel:+1234567890">+1 234 567 890</a></li>
+              <li><i class="fas fa-envelope"></i> <a href="mailto:hello@blackgoosebistro.com">hello@blackgoosebistro.com</a></li>
+              <li><i class="fas fa-globe"></i> <a href="https://www.blackgoosebistro.com">www.blackgoosebistro.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-footer">
+        <div class="container">
+          <div class="logo-image-footer">
+            <img src="./images/pizza.ico" alt="PizzaMania Icon" />
+            <h1>PizzaMania</h1>
+          </div>
+          <p>&copy; 2025 PizzaMania. All rights reserved.</p>
+          <div class="social-media-pages">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://mail.google.com/"><i class="fab fa-google"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
